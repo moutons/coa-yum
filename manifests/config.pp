@@ -6,7 +6,7 @@ class coa-yum::config {
   }
 
   exec { 'installepel':
-    command => '/bin/rpm -Uvh http://mirrors.servercentral.net/fedora/epel/5/i386/epel-release-5-4.noarch.rpm',
+    command => '/bin/rpm -Uvh http://mirror.pnl.gov/epel/6/i386/epel-release-6-8.noarch.rpm',
     path    => '/bin',
   }
 }
