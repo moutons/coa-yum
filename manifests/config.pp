@@ -10,5 +10,6 @@ class coa-yum::config {
     command => '/bin/rpm -Uvh http://mirror.pnl.gov/epel/6/i386/epel-release-6-8.noarch.rpm',
     path    => '/bin',
     before  => Class['coa-yum::install'],
+    creates => '/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6',
   }
 }
